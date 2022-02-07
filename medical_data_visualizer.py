@@ -14,8 +14,9 @@ df['overweight'] = np.where(df["weight"] / (df["height"] * df["height"]) * 10000
 df['cholesterol'] = np.where(df['cholesterol'] == 1, 0, 1)
 df['gluc'] = np.where(df['gluc'] == 1, 0, 1)
 
-# Draw Categorical Plot
+
 def draw_cat_plot():
+    """Draw a catergorical plot."""
     # Create DataFrame for cat plot using `pd.melt` using just the values from 'cholesterol', 'gluc', 'smoke', 'alco', 'active', and 'overweight'.
     vars = sorted(["cholesterol", "gluc", "smoke", "alco", "active", "overweight"])
     df_cat = pd.melt(df, id_vars=['cardio'], value_vars=vars)
@@ -34,8 +35,8 @@ def draw_cat_plot():
     return fig
 
 
-# Draw Heat Map
 def draw_heat_map():
+    """Draw a heat map."""
     # Clean the data
     df_heat = df.loc[
       (df['ap_lo'] <= df['ap_hi'])
