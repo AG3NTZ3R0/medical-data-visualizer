@@ -1,3 +1,7 @@
+# Medical Data Visualizer
+
+This is an original work inspired by one of the five required projects within the freeCodeCamp() Data Analysis with Python certification. I am responsible for writing all of the code within the medical_data_visualizer.py file. The test code was supplied by freeCodeCamp() in order to analyze the required work. Below, you will see the prompt for this programming assignment.
+
 ### Assignment
 
 In this project, you will visualize and make calculations from medical examination data using matplotlib, seaborn, and pandas. The dataset values were collected during medical examinations.
